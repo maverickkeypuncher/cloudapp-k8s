@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: cloudapp
+  name: app-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  -  host: cloudapp.lab.dj
+     http:
+      paths:
+      -  path: /
+         backend:
+          service: 
+            name: cloudapp-service
+            port:
+             number: 80
+         pathType: Prefix

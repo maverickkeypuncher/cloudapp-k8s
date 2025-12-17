@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cloudapp-config
+  namespace: cloudapp
+data:
+  MYSQL_HOST: "mysql"
+  MYSQL_DB: "cloudapp"
+
