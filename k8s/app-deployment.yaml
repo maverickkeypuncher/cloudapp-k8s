@@ -20,6 +20,8 @@ spec:
         app: cloudapp
     spec:
       restartPolicy: Always
+      imagePullSecrets:
+        - name: ghcr-secret 
       containers:
         - name: cloudapp
           image: ghcr.io/maverickkeypuncher/dj-cloudapp:main-76523ae
