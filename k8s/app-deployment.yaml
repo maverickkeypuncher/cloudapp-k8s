@@ -22,7 +22,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: cloudapp
-          image: registry.local:5000/djcloud-app:1.0
+          image: ghcr.io/maverickkeypuncher/dj-cloudapp:main-76523ae
           securityContext:
             runAsUser: 0
           resources:
