@@ -24,7 +24,7 @@ spec:
         - name: ghcr-secret 
       containers:
         - name: cloudapp
-          image: ghcr.io/maverickkeypuncher/dj-cloudapp:main-01af6b3
+          image: ghcr.io/maverickkeypuncher/dj-cloudapp:main-c8d4fc1
           securityContext:
             runAsUser: 0
           resources:
